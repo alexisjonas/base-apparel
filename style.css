@@ -27,6 +27,8 @@ body {
 
 img { max-width: 100%;}
 
+section { padding: 0 0 3rem 0; }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -37,12 +39,19 @@ img { max-width: 100%;}
     flex-flow: row wrap;
 }
 
-/* .container {
+.hero__logo {
+    padding: 2rem;
+    width: 150px;
+}
+
+.hero__text { order: 3; }
+
+.hero__form { order: 4; }
+
+.container {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-} */
+}
 
 h1 {
     font-size: 3rem;
@@ -69,22 +78,20 @@ p {
     width: 100%;
     padding: 1rem;
     border-radius: 100px;
+    background-color: var(--linear-grad-light);
+    position: relative;
 }
 
 
 .btn {
     background: var(--linear-grad-dark);
     border-radius: 100px;
-    padding: .75rem 1.5rem;
+    padding: .77rem 1.55rem;
     border: none;
     box-shadow: 0 5px 10px 5px hsla(234, 12% , 34%, 10%);
+    position: absolute;
+    right: 30px;
 }
 
-.hero__img {
-    order: -1;
-}
 
-.hero__logo {
-    order: -1;
-}
 
