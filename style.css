@@ -36,7 +36,7 @@ section { padding: 0 0 3rem 0; }
     text-align: center;
     background: var(--linear-grad-light);    
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
 }
 
 .hero__logo {
@@ -44,9 +44,7 @@ section { padding: 0 0 3rem 0; }
     width: 150px;
 }
 
-.hero__text { order: 3; }
-
-.hero__form { order: 4; }
+.hero__img { margin: 0 auto; }
 
 .container {
     width: 80%;
@@ -70,6 +68,7 @@ span {
 p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .input {
@@ -90,7 +89,34 @@ p {
     border: none;
     box-shadow: 0 5px 10px 5px hsla(234, 12% , 34%, 10%);
     position: absolute;
-    right: 30px;
+    right: 8%;
+}
+
+@media (min-width: 670px ) {
+    .hero__form { width: 60%; }
+    .btn { right: 18%; }
+    .row {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        height: 300px;
+        /* border: 2px solid red; */
+    }
+    .hero__img {
+        position: absolute;
+        right: 0%;
+
+    }
+    .hero__title {
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero {
+        flex-direction: row;
+    }
 }
 
 
