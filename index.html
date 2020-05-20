@@ -17,27 +17,26 @@
 
     <img class="hero__logo" src="images/logo.svg" alt="Base Apparel" />
 
-    <div class="container row">
-      <div class="hero__img">
-        <!-- <img src="images/hero-mobile.jpg" alt="hero image" /> -->
+    <picture class="hero__img">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 900px)">
+      <img src="images/hero-mobile.jpg" alt="hero image" />
+    </picture>
 
-        <img srcset= "images/hero-desktop.jpg 610w, images/hero-mobile.jpg 375w" sizes="(min-width: 900px) 50vw, 100vw" src="images/hero-mobile.jpg" alt="hero image">
-      </div>
-    
+    <div class="container">
       <div class="hero__title">
         <h1>We're</br><span>coming</br>soon</span></h1>
       </div>
-    </div>
+        
+      <div class="hero__text">
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
     
-    <div class="container hero__text">
-      <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      
+      <form class="container hero__form" action="">
+        <input class="input" type="email" id="email" required placeholder="Email Address">  
+        <button class="btn"><img src="images/icon-arrow.svg" alt="submit"></button>
+      </form>
     </div>
-
-  
-    <form class="container hero__form" action="">
-      <input class="input" type="email" id="email" required placeholder="Email Address">  
-      <button class="btn"><img src="images/icon-arrow.svg" alt="submit"></button>
-    </form>
 
   </section>
   
@@ -48,6 +47,6 @@
     </p>
   </footer>
 
-
+ <script src="script.js"></script>
 </body>
 </html>
